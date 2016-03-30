@@ -5,8 +5,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
-	<link rel="stylesheet" href="/resource/css/bootstrap.min.css">
-	<link rel="stylesheet" href="/resource/css/login.css">
+	<link rel="stylesheet" href="<?= base_url() ?>resource/css/bootstrap.min.css">
+	<link rel="stylesheet" href="<?= base_url() ?>resource/css/login.css">
 </head>
 <body>
 	<div class="container">
@@ -68,7 +68,7 @@
 
 		
 	</div>
-	<script src="/resource/js/jquery-1.11.3.min.js"></script>
+	<script src="<?= base_url() ?>resource/js/jquery-1.11.3.min.js"></script>
 	<script>
 		$(".btn-team").addClass('change');
 		$("#form-individual").addClass('none');

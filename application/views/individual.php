@@ -5,8 +5,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
-	<link rel="stylesheet" href="/resource/css/bootstrap.min.css">
-	<link rel="stylesheet" href="/resource/css/individual.css">
+	<link rel="stylesheet" href="<?= base_url() ?>resource/css/bootstrap.min.css">
+	<link rel="stylesheet" href="<?= base_url() ?>resource/css/individual.css">
 </head>
 <body>
 
@@ -308,7 +308,7 @@
 		</div>
 	</div>
 	
-	<script src="/resource/js/jquery-1.11.3.min.js"></script>
+	<script src="<?= base_url() ?>resource/js/jquery-1.11.3.min.js"></script>
 	<script>
 		$(".btn1").click(function(event) {
 			$(".btn1 .iconfont").addClass('click');

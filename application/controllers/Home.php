@@ -15,47 +15,47 @@ class Home extends CI_Controller
         $this->parser->parse("test", $this->data);
     }
 
-    public function register()
-    {
-        $this->parser->parse("register", $this->data);
-    }
-
-    public function login()
+    public function login_page()
     {
         $this->parser->parse("login", $this->data);
     }
 
-    public function individual()
+    public function register_page()
+    {
+        $this->parser->parse("register", $this->data);
+    }
+
+    public function individual_page()
     {
         $this->parser->parse("individual", $this->data);
     }
 
-    public function team()
+    public function team_page()
     {
         $this->parser->parse("team", $this->data);
     }
 
-    public function add_member()
+    public function member_add_page()
     {
         $this->parser->parse("add_member", $this->data);
     }
 
-    public function find_member()
+    public function member_find_page()
     {
         $this->parser->parse("find_member", $this->data);
     }
 
-    public function create_project()
+    public function project_add_page()
     {
         $this->parser->parse("create_project", $this->data);
     }
 
-    public function about_project()
+    public function project_show_page()
     {
         $this->parser->parse("about_project", $this->data);
     }
 
-    public function edit()
+    public function edit_page()
     {
         $this->parser->parse("edit", $this->data);
     }
