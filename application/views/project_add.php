@@ -10,18 +10,14 @@
     <link rel="stylesheet" href="<?= base_url() ?>resource/css/DateTimePicker.css">
 </head>
 <body>
-
 <nav class="navbar navbar-default" role="navigation">
     <div class="navbar-header">
         <p class="navbar-brand"><a href="#"><i class="iconfont">&#xe613;</i></a>&nbsp;创建项目</p>
     </div>
-
 </nav>
-
 <div class="container">
     <div class="row">
         <div class="col-xs-offset-1 col-xs-10 col-md-offset-4 col-md-4">
-
             <form action="" method="" role="form" id="form-team">
                 <div class="row">
                     <div class="col-xs-12">
@@ -69,8 +65,6 @@
                     </div>
                 </div>
             </form>
-
-
         </div>
     </div>
 </div>
@@ -79,6 +73,5 @@
 <script text="text/javascript">
     $("#dtBox").DateTimePicker();
 </script>
-
 </body>
 </html>

@@ -37,22 +37,22 @@ class Home extends CI_Controller
 
     public function member_add_page()
     {
-        $this->parser->parse("add_member", $this->data);
+        $this->parser->parse("member_add", $this->data);
     }
 
     public function member_find_page()
     {
-        $this->parser->parse("find_member", $this->data);
+        $this->parser->parse("member_find", $this->data);
     }
 
     public function project_add_page()
     {
-        $this->parser->parse("create_project", $this->data);
+        $this->parser->parse("project_add", $this->data);
     }
 
     public function project_show_page()
     {
-        $this->parser->parse("about_project", $this->data);
+        $this->parser->parse("project_show", $this->data);
     }
 
     public function edit_page()

@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="<?= base_url() ?>resource/css/add_member.css">
 </head>
 <body>
-
 <div class="container">
     <div class="row">
         <div class="col-xs-2">
@@ -23,7 +22,5 @@
         </div>
     </div>
 </div>
-
-
 </body>
 </html>

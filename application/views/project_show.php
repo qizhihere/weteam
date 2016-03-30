@@ -9,14 +9,11 @@
     <link rel="stylesheet" href="<?= base_url() ?>resource/css/about_project.css">
 </head>
 <body>
-
 <nav class="navbar navbar-default" role="navigation">
     <div class="navbar-header">
         <p class="navbar-brand"><a href="#"><i class="iconfont">&#xe613;</i></a>&nbsp;详细项目资料</p>
     </div>
-
 </nav>
-
 <div class="container">
     <div class="row">
         <div class="col-xs-12 col-md-offset-4 col-md-4">
@@ -104,12 +101,8 @@
                 </div>
             </div>
             </form>
-
-
         </div>
     </div>
 </div>
-
-
 </body>
 </html>
