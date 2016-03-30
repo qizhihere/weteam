@@ -1,0 +1,78 @@
+.btn-set{
+	width: 100% !important;
+	border-radius: 0;
+	color: rgb(210,210,210);
+	background: rgb(252,252,252);
+	height: 45px;
+	font-family: 微软雅黑;
+	font-size: 15px;
+}
+.btn-login{
+	width: 100% !important;
+	border-radius: 0;
+	color: rgb(210,217,224);
+	background: rgb(3,169,245);
+	height: 45px;
+	font-family: 微软雅黑;
+	font-size: 15px;
+}
+.btn-set:hover{
+	color: #778899;
+}
+#e-mail-team{
+	height: 45px;
+}
+#password-team{
+	height: 45px;
+}
+#e-mail-individual{
+	height: 45px;
+}
+#password-individual{
+	height: 45px;
+}
+
+.block{
+	display: block;
+}
+.none{
+	display: none;
+}
+.change{
+	color: rgb(210,217,224);
+	background: rgb(3,169,245);
+}
+.register{
+	text-align: right;
+	margin-top: 10px;
+	font-family: 微软雅黑;
+	color: rgb(81,107,171);
+}
+
+
+ .btn-setdiv1{
+ 	padding-right: 0px !important;
+ }
+ .btn-setdiv2{
+ 	padding-left: 0px !important;
+ }
+ .btn-logindiv{
+ 	padding-top: 30px;
+ }
+
+ .container{
+ 	margin-top: 150px;
+ }
+ @media screen and (min-width:920px){
+	body{
+	 	background: url(../images/bg.jpg);
+	 	background-repeat: no-repeat;
+		background-size: 100% auto;
+		-moz-background-size:100% auto;
+ }
+ }
+@media screen and (max-width:920px){
+ 	body{
+ 		background: url(../images/bg.jpg)
+ 	}
+ }
