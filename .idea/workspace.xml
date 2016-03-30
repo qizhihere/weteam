@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96050d12-4eb7-40a7-a9e7-3704b9adaaef" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/Home.php" afterPath="$PROJECT_DIR$/application/controllers/Home.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/edit.php" afterPath="$PROJECT_DIR$/application/views/edit.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/individual.php" afterPath="$PROJECT_DIR$/application/views/individual.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/login.php" afterPath="$PROJECT_DIR$/application/views/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/member_add.php" afterPath="$PROJECT_DIR$/application/views/member_add.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/member_find.php" afterPath="$PROJECT_DIR$/application/views/member_find.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/project_add.php" afterPath="$PROJECT_DIR$/application/views/project_add.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/project_show.php" afterPath="$PROJECT_DIR$/application/views/project_show.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/register.php" afterPath="$PROJECT_DIR$/application/views/register.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/team.php" afterPath="$PROJECT_DIR$/application/views/team.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config/autoload.php" afterPath="$PROJECT_DIR$/application/config/autoload.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config/database.php" afterPath="$PROJECT_DIR$/application/config/database.php" />
     </list>
     <ignored path="weteam.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,7 +24,28 @@
     <favorites_list name="weteam" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="database.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/config/database.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="80" column="25" selection-start-line="80" selection-start-column="25" selection-end-line="80" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="autoload.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/config/autoload.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="441">
+              <caret line="60" column="32" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -43,7 +56,6 @@
         <option value="$PROJECT_DIR$/application/views/welcome_message.php" />
         <option value="$PROJECT_DIR$/application/controllers/Api.php" />
         <option value="$PROJECT_DIR$/application/config/routes.php" />
-        <option value="$PROJECT_DIR$/application/config/autoload.php" />
         <option value="$PROJECT_DIR$/application/views/about_project.php" />
         <option value="$PROJECT_DIR$/application/views/add_member.php" />
         <option value="$PROJECT_DIR$/application/views/create_project.php" />
@@ -61,6 +73,8 @@
         <option value="$PROJECT_DIR$/application/views/project_show.php" />
         <option value="$PROJECT_DIR$/application/views/register.php" />
         <option value="$PROJECT_DIR$/application/views/team.php" />
+        <option value="$PROJECT_DIR$/application/config/database.php" />
+        <option value="$PROJECT_DIR$/application/config/autoload.php" />
       </list>
     </option>
   </component>
@@ -169,6 +183,24 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weteam" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weteam" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -236,18 +268,18 @@
       <option name="presentableId" value="Default" />
       <updated>1459340555446</updated>
       <workItem from="1459340557464" duration="34000" />
-      <workItem from="1459340612368" duration="2432000" />
+      <workItem from="1459340612368" duration="2610000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2466000" />
+    <option name="totallyTimeSpent" value="2644000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -302,14 +334,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="514">
           <caret line="51" column="36" selection-start-line="51" selection-start-column="36" selection-end-line="51" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/config/autoload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="99" column="39" selection-start-line="99" selection-start-column="39" selection-end-line="99" selection-end-column="39" />
           <folding />
         </state>
       </provider>
@@ -418,6 +442,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="80" column="25" selection-start-line="80" selection-start-column="25" selection-end-line="80" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/config/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="60" column="32" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
           <folding />
         </state>
       </provider>
