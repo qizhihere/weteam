@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="96050d12-4eb7-40a7-a9e7-3704b9adaaef" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config/autoload.php" afterPath="$PROJECT_DIR$/application/config/autoload.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/config/database.php" afterPath="$PROJECT_DIR$/application/config/database.php" />
     </list>
     <ignored path="weteam.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -268,12 +267,12 @@
       <option name="presentableId" value="Default" />
       <updated>1459340555446</updated>
       <workItem from="1459340557464" duration="34000" />
-      <workItem from="1459340612368" duration="2610000" />
+      <workItem from="1459340612368" duration="2674000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2644000" />
+    <option name="totallyTimeSpent" value="2708000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
