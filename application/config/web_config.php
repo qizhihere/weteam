@@ -9,6 +9,14 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
 // 版本
 $config["v"] = 1;
 
+// 默认
+define("YES", 1);
+define("NO", 0);
+
+// 类别
+define("INDIVIDUAL", 1);
+define("TEAM", 2);
+
 // 页面
 define("LOGIN_PAGE", "home/login_page/");
 define("REGISTER_PAGE", "home/register_page/");

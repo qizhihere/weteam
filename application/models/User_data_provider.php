@@ -26,4 +26,15 @@ class User_data_provider extends CI_Model
         }
         return true;
     }
+
+    public function get_user_info($type, $mail, $password)
+    {
+        $sql = "SELECT * FROM $this->table WHERE type=$type AND mail=$mail AND password=$password LIMIT 1";
+        $user_info_list = $this->db->query($sql)->result_array();
+        if (count($user_info_list <= 0)) {
+            return false;
+        }
+        return $user_info_list[0];
+    }
+
 }

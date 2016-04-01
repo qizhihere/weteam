@@ -24,6 +24,15 @@ function create_user_info($type, $mail, $name, $password)
         'mail' => $mail,
         'name' => $name,
         'password' => $password,
-        'time' => time()
+        'time' => time(),
+    );
+}
+
+function create_team_info($id, $name)
+{
+    return array(
+        'id' => $id,
+        'name' => $name,
+        'content' => null,
     );
 }
