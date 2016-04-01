@@ -37,4 +37,14 @@ class User_data_provider extends CI_Model
         return $user_info_list[0];
     }
 
+    public function search_user_info($mail)
+    {
+        $sql = "SELECT * FROM $this->table WHERE mail=$mail";
+        $user_info_list = $this->db->query($sql)->result_array();
+        if (count($user_info_list <= 0)) {
+            return false;
+        }
+        return $user_info_list;
+    }
+
 }

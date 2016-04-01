@@ -28,7 +28,7 @@ function create_user_info($type, $mail, $name, $password)
     );
 }
 
-function create_team_info($id, $name)
+function create_team_base_info($id, $name)
 {
     return array(
         'id' => $id,
@@ -37,11 +37,32 @@ function create_team_info($id, $name)
     );
 }
 
+function create_team_info($id, $name, $content)
+{
+    return array(
+        'id' => $id,
+        'name' => $name,
+        'content' => $content,
+    );
+}
+
+
 function create_member_info($individual_id, $team_id)
 {
     return array(
         'individual_id' => $individual_id,
         'team_id' => $team_id,
         'time' => time(),
+    );
+}
+
+function create_project_info($project_name, $user_name, $user_phone, $time, $content)
+{
+    return array(
+        'project_name' => $project_name,
+        'user_name' => $user_name,
+        'user_phone' => $user_phone,
+        'time' => $time,
+        'content' => $content,
     );
 }

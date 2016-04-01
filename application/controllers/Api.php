@@ -10,6 +10,7 @@ class Api extends CI_Controller
         $this->load->model('user_data_provider');
         $this->load->model('team_data_provider');
         $this->load->model('member_data_provider');
+        $this->load->model('project_data_provider');
         $this->data = array();
     }
 
@@ -22,7 +23,7 @@ class Api extends CI_Controller
         $user_info = create_user_info($type, $mail, $name, $password);
         $res_user = $this->user_data_provider->save_user_info($user_info);
         if ($type == TEAM) {
-            $team_info = create_team_info($res_user, $name);
+            $team_info = create_team_base_info($res_user, $name);
             $res_team = $this->team_data_provider->save_team_info($team_info);
         }
         echo YES;
@@ -43,10 +44,11 @@ class Api extends CI_Controller
 
     public function edit_api()
     {
-        $data['id'] = $this->input->post('id');
-        $data['name'] = $this->input->post('name');
-        $data['content'] = $this->input->post('content');
-        $res = $this->team_data_provider->update_team_info($data);
+        $id = $this->input->post('id');
+        $name = $this->input->post('name');
+        $content = $this->input->post('content');
+        $team_info = create_team_info($id, $name, $content);
+        $res = $this->team_data_provider->update_team_info($team_info);
         echo YES;
     }
 
@@ -56,6 +58,25 @@ class Api extends CI_Controller
         $team_id = $this->input->post('team_id');
         $member_info = create_member_info($individual_id, $team_id);
         $res = $this->member_data_provider->save_member_info($member_info);
+        echo YES;
+    }
+
+    public function member_search_api()
+    {
+        $mail = $this->input->post('mail');
+        $user_info_list = $this->user_data_provider->search_user_info($mail);
+        echo json_encode($user_info_list, JSON_UNESCAPED_UNICODE);
+    }
+
+    public function project_save_api()
+    {
+        $project_name = $this->input->post('project_name');
+        $user_name = $this->input->post('user_name');
+        $user_phone = $this->input->post('user_phone');
+        $time = $this->input->post('time');
+        $content = $this->input->post('content');
+        $project_info = create_project_info($project_name, $user_name, $user_phone, $time, $content);
+        $res = $this->project_data_provider->save_project_info($project_info);
         echo YES;
     }
 
