@@ -22,10 +22,15 @@
                 </div>
             </div>
 
-            <form action="" method="" role="form" id="form-team">
+            <form action="<?= base_url(LOGIN_API) ?>" method="POST" role="form" id="form-team">
                 <div class="row">
                     <div class="col-xs-12">
-                        <input type="email" class="form-control" id="e-mail-team" name="e-mail"
+                        <input type="hidden" class="form-control form-register" name="type" value="<?= TEAM ?>">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <input type="email" class="form-control" id="e-mail-team" name="mail"
                                placeholder="&nbsp;邮&nbsp;箱" required="true">
                     </div>
                 </div>
@@ -42,10 +47,15 @@
                 </div>
             </form>
 
-            <form action="" method="" role="form" id="form-individual">
+            <form action="<?= base_url(LOGIN_API) ?>" method="POST" role="form" id="form-individual">
                 <div class="row">
                     <div class="col-xs-12">
-                        <input type="email" class="form-control" id="e-mail-individual" name="e-mail"
+                        <input type="hidden" class="form-control form-register" name="type" value="<?= INDIVIDUAL ?>">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <input type="email" class="form-control" id="e-mail-individual" name="mail"
                                placeholder="&nbsp;邮&nbsp;箱" required="true">
                     </div>
                 </div>

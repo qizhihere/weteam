@@ -17,15 +17,19 @@
 <div class="container">
     <div class="row">
         <div class="col-xs-12 col-md-offset-4 col-md-4">
-            <form action="">
+            <form action="<?= base_url(EDIT_API) ?>" method="POST">
+                <div class="col-xs-12 line">
+                    <input type="hidden" class="form-control" name="id" value="<?= $team_info['id'] ?>">
+                </div>
                 <div class="col-xs-12 line">
                     <label for="">团队名称</label>
-                    <input type="text" class="form-control" placeholder="团队名称">
+                    <input type="text" class="form-control" name="name" placeholder="团队名称"
+                           value="<?= $team_info['name'] ?>">
                 </div>
                 <div class="col-xs-12 line">
                     <label for="">团队简介</label>
-                    <textarea name="" id="" cols="30" rows="10" class="form-control"
-                              placeholder="用几句话介绍你们团队吧"></textarea>
+                    <textarea name="content" id="" cols="30" rows="10" class="form-control"
+                              placeholder="用几句话介绍你们团队吧"><?= $team_info['content'] ?></textarea>
                 </div>
                 <div class="row">
                     <div class="col-xs-5 col-xs-offset-7 register">

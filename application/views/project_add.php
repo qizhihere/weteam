@@ -18,29 +18,29 @@
 <div class="container">
     <div class="row">
         <div class="col-xs-offset-1 col-xs-10 col-md-offset-4 col-md-4">
-            <form action="" method="" role="form" id="form-team">
+            <form action="<?= base_url(PROJECT_SAVE_API) ?>" method="POST" role="form" id="form-team">
                 <div class="row">
                     <div class="col-xs-12">
-                        <input type="text" class="form-control form-register iconfont" name="password"
+                        <input type="text" class="form-control form-register iconfont" name="project_name"
                                placeholder="&#xe60f;&nbsp;项目名称" required="true">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-xs-12">
-                        <input type="text" class="form-control form-register iconfont" name="password"
+                        <input type="text" class="form-control form-register iconfont" name="user_name"
                                placeholder="&#xe604;&nbsp;负责人" required="true">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-xs-12">
-                        <input type="tel" class="form-control form-register iconfont" name="password"
+                        <input type="tel" class="form-control form-register iconfont" name="user_phone"
                                placeholder="&#xe615;&nbsp;联系电话" required="true">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-xs-12">
                         <input type="text" data-field="datetime" class="form-control form-register iconfont"
-                               name="password" id="dateinput" placeholder="&#xe611;&nbsp;启动时间" required="true">
+                               name="time" id="dateinput" placeholder="&#xe611;&nbsp;启动时间" required="true">
                         <div id="dtBox" class="dtpicker-overlay dtpicker-mobile">
                             <div class="dtpicker-bg">
                                 <div class="dtpicker-cont">
@@ -54,7 +54,7 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-12">
-                        <textarea type="password" class="form-control form-register iconfont"
+                        <textarea class="form-control form-register iconfont" name="content"
                                   placeholder="&#xf00be;&nbsp;项目简介" required="true"></textarea>
                     </div>
                 </div>
