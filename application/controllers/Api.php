@@ -52,12 +52,12 @@ class Api extends CI_Controller
         echo YES;
     }
 
-    public function member_save_api()
+    public function member_add_api()
     {
         $individual_id = $this->input->post('individual_id');
         $team_id = $this->input->post('team_id');
-        $member_info = create_member_info($individual_id, $team_id);
-        $res = $this->member_data_provider->save_member_info($member_info);
+        $team_member_info = create_team_member_info($individual_id, $team_id);
+        $res = $this->member_data_provider->save_member_info($team_member_info);
         echo YES;
     }
 
@@ -77,6 +77,15 @@ class Api extends CI_Controller
         $content = $this->input->post('content');
         $project_info = create_project_info($project_name, $user_name, $user_phone, $time, $content);
         $res = $this->project_data_provider->save_project_info($project_info);
+        echo YES;
+    }
+
+    public function project_add_api()
+    {
+        $individual_id = $this->input->post('individual_id');
+        $project_id = $this->input->post('project_id');
+        $project_member_info = create_team_member_info($individual_id, $project_id);
+        $res = $this->member_data_provider->save_project_member_info($project_member_info);
         echo YES;
     }
 

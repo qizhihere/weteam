@@ -8,19 +8,30 @@
  */
 class Member_data_provider extends CI_Model
 {
-    private $table;
+    private $team_table;
+    private $project_table;
     public $ci;
 
     function __construct()
     {
         parent::__construct();
-        $this->table = "member";
+        $this->team_table = "team_member";
+        $this->project_table = "project_member";
         $this->ci = &get_instance();
     }
 
-    public function save_member_info($data)
+    public function save_team_member_info($data)
     {
-        $this->db->insert($this->table, $data);
+        $this->db->insert($this->team_table, $data);
+        if ($this->db->affected_rows() <= 0) {
+            return false;
+        }
+        return true;
+    }
+
+    public function save_project_member_info($data)
+    {
+        $this->db->insert($this->project_table, $data);
         if ($this->db->affected_rows() <= 0) {
             return false;
         }

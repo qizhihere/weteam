@@ -47,7 +47,7 @@ function create_team_info($id, $name, $content)
 }
 
 
-function create_member_info($individual_id, $team_id)
+function create_team_member_info($individual_id, $team_id)
 {
     return array(
         'individual_id' => $individual_id,
@@ -64,5 +64,14 @@ function create_project_info($project_name, $user_name, $user_phone, $time, $con
         'user_phone' => $user_phone,
         'time' => $time,
         'content' => $content,
+    );
+}
+
+function create_project_member_info($individual_id, $project_id)
+{
+    return array(
+        'individual_id' => $individual_id,
+        'project_id' => $project_id,
+        'time' => time(),
     );
 }

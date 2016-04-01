@@ -32,6 +32,7 @@ define("EDIT_PAGE", "page/edit_page/");
 define("REGISTER_API", "api/register_api/");
 define("LOGIN_API", "api/login_api/");
 define("EDIT_API", "api/edit_api/");
-define("MEMBER_SAVE_API", "api/member_save_api/");
+define("MEMBER_ADD_API", "api/member_add_api/");
 define("MEMBER_SEARCH_API", "api/member_search_api/");
 define("PROJECT_SAVE_API", "api/project_save_api/");
+define("PROJECT_ADD_API", "api/project_add_api/");
