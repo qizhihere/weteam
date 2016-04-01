@@ -149,10 +149,10 @@ function my_http_curl_get($url)
     $file_data = curl_exec($ch);
     $info = curl_getinfo($ch);
     curl_close($ch);
-    return [
+    return array(
         "file_data" => $file_data,
         "info" => $info,
-    ];
+    );
 }
 
 function my_http_curl_post($url, $data)
