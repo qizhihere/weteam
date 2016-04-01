@@ -18,7 +18,7 @@
 <div class="container">
     <div class="row">
         <div class="col-xs-offset-1 col-xs-10 col-md-offset-4 col-md-4">
-            <form action="<?= base_url(PROJECT_SAVE_API) ?>" method="POST" role="form" id="form-team">
+            <form action="<?= base_url() . 'index.php/' . PROJECT_SAVE_API ?>" method="POST" role="form" id="form-team">
                 <div class="row">
                     <div class="col-xs-12">
                         <input type="text" class="form-control form-register iconfont" name="project_name"

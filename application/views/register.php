@@ -25,7 +25,7 @@
                     <button type="button" class="btn btn-set btn-individual">个&nbsp;人</button>
                 </div>
             </div>
-            <form action="<?= base_url(REGISTER_API) ?>" method="POST" role="form" id="form-team">
+            <form action="<?= base_url() . 'index.php/' . REGISTER_API ?> ?>" method="POST" role="form" id="form-team">
                 <div class="row">
                     <div class="col-xs-12">
                         <input type="hidden" class="form-control form-register" name="type" value="<?= TEAM ?>">
@@ -65,7 +65,8 @@
                 </div>
             </form>
 
-            <form action="<?= base_url(REGISTER_API) ?>" method="POST" role="form" id="form-individual">
+            <form action="<?= base_url() . 'index.php/' . REGISTER_API ?>" method="POST" role="form"
+                  id="form-individual">
                 <div class="row">
                     <div class="col-xs-12">
                         <input type="hidden" class="form-control form-register" name="type" value="<?= INDIVIDUAL ?>">
