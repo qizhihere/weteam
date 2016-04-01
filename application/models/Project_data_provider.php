@@ -27,4 +27,14 @@ class Project_data_provider extends CI_Model
         return true;
     }
 
+    public function get_project_info($id)
+    {
+        $sql = "SELECT * FROM $this->table WHERE id=$id LIMIT 1";
+        $project_info_list = $this->db->query($sql)->result_array();
+        if (count($project_info_list <= 0)) {
+            return false;
+        }
+        return $project_info_list[0];
+    }
+
 }
