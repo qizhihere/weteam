@@ -18,12 +18,17 @@ define("INDIVIDUAL", 1);
 define("TEAM", 2);
 
 // 页面
-define("LOGIN_PAGE", "home/login_page/");
-define("REGISTER_PAGE", "home/register_page/");
-define("INDIVIDUAL_PAGE", "home/individual_page/");
-define("TEAM_PAGE", "home/team_page/");
-define("MEMBER_ADD_PAGE", "home/member_add_page/");
-define("MEMBER_FIND_PAGE", "home/member_find_page/");
-define("PROJECT_ADD_PAGE", "home/project_add_page/");
-define("PROJECT_SHOW_PAGE", "home/project_show_page/");
-define("EDIT_PAGE", "home/edit_page/");
+define("LOGIN_PAGE", "page/login_page/");
+define("REGISTER_PAGE", "page/register_page/");
+define("INDIVIDUAL_PAGE", "page/individual_page/");
+define("TEAM_PAGE", "page/team_page/");
+define("MEMBER_ADD_PAGE", "page/member_add_page/");
+define("MEMBER_FIND_PAGE", "page/member_find_page/");
+define("PROJECT_ADD_PAGE", "page/project_add_page/");
+define("PROJECT_SHOW_PAGE", "page/project_show_page/");
+define("EDIT_PAGE", "page/edit_page/");
+
+// 操作
+define("REGISTER_API", "api/register_api/");
+define("LOGIN_API", "api/login_api/");
+define("EDIT_API", "api/edit_api/");

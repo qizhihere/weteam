@@ -9,6 +9,7 @@ class Api extends CI_Controller
         parent::__construct();
         $this->load->model('user_data_provider');
         $this->load->model('team_data_provider');
+        $this->load->model('member_data_provider');
         $this->data = array();
     }
 
@@ -40,12 +41,21 @@ class Api extends CI_Controller
         }
     }
 
-    public function edit_team_api()
+    public function edit_api()
     {
         $data['id'] = $this->input->post('id');
         $data['name'] = $this->input->post('name');
         $data['content'] = $this->input->post('content');
         $res = $this->team_data_provider->update_team_info($data);
+        echo YES;
+    }
+
+    public function member_save_api()
+    {
+        $individual_id = $this->input->post('individual_id');
+        $team_id = $this->input->post('team_id');
+        $member_info = create_member_info($individual_id, $team_id);
+        $res = $this->member_data_provider->save_member_info($member_info);
         echo YES;
     }
 

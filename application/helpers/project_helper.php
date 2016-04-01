@@ -36,3 +36,12 @@ function create_team_info($id, $name)
         'content' => null,
     );
 }
+
+function create_member_info($individual_id, $team_id)
+{
+    return array(
+        'individual_id' => $individual_id,
+        'team_id' => $team_id,
+        'time' => time(),
+    );
+}
