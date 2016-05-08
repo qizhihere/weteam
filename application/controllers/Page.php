@@ -56,7 +56,6 @@ class Page extends CI_Controller
     {
         $id = $this->input->get("id");
         $this->data["project_info"] = $this->project_data_provider->get_project_info($id);
-        var_dump($this->data["project_info"]);
         $this->parser->parse("project_show", $this->data);
     }
 
