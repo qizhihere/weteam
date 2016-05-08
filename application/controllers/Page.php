@@ -7,6 +7,7 @@ class Page extends CI_Controller
     function __construct()
     {
         parent::__construct();
+        $this->load->model("project_data_provider");
         $this->data = array();
     }
 
