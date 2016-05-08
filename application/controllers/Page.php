@@ -3,13 +3,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Page extends CI_Controller
 {
+    public $data = array();
 
     function __construct()
     {
         parent::__construct();
         $this->load->model("project_data_provider");
         $this->load->model("team_data_provider");
-        $this->data = array();
     }
 
     public function index()
