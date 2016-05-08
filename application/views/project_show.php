@@ -46,7 +46,7 @@
                     <i class="iconfont">&#xe611;</i>&nbsp;&nbsp;&nbsp;启动时间
                 </div>
                 <div class="col-xs-8 line detail">
-                    <?= $project_info['time'] ?>
+                    <?= date("Y-m-d", $project_info['time']) ?>
                 </div>
             </div>
             <div class="row rowborder next">
@@ -63,7 +63,7 @@
                     <i class="iconfont">&#xf00be;</i>&nbsp;&nbsp;&nbsp;项目简介
                 </div>
                 <div class="col-xs-8 line detail">
-                    <?= $project_info['project_content'] ?>
+                    <?= $project_info['content'] ?>
                 </div>
             </div>
             <div class="row">
