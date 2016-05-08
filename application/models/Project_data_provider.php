@@ -18,7 +18,7 @@ class Project_data_provider extends CI_Model
         $this->ci = &get_instance();
     }
 
-    public function save_project_info($data)
+    function save_project_info($data)
     {
         $this->db->insert($this->table, $data);
         if ($this->db->affected_rows() <= 0) {
@@ -27,7 +27,7 @@ class Project_data_provider extends CI_Model
         return true;
     }
 
-    public function get_project_info($id)
+    function get_project_info($id)
     {
         $where = array(
             "id" => $id,
