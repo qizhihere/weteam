@@ -8,6 +8,7 @@ class Page extends CI_Controller
     {
         parent::__construct();
         $this->load->model("project_data_provider");
+        $this->load->model("team_data_provider");
         $this->data = array();
     }
 
@@ -60,6 +61,8 @@ class Page extends CI_Controller
 
     public function edit_page()
     {
+        $id = $this->input->get("id");
+        $this->data["team_info "] = $this->team_data_provider->get_team_info($id);
         $this->parser->parse("edit", $this->data);
     }
 
