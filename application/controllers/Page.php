@@ -54,15 +54,16 @@ class Page extends CI_Controller
 
     public function project_show_page()
     {
-        $id = $this->input->get("id");
+//        $id = $this->input->get("id");
+        $id = 1;
         $this->data["project_info"] = $this->project_data_provider->get_project_info($id);
-        var_dump($this->data["project_info"]);
         $this->parser->parse("project_show", $this->data);
     }
 
     public function edit_page()
     {
-        $id = $this->input->get("id");
+//        $id = $this->input->get("id");
+        $id = 1;
         $this->data["team_info"] = $this->team_data_provider->get_team_info($id);
         $this->parser->parse("edit", $this->data);
     }
