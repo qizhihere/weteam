@@ -29,12 +29,13 @@ class Project_data_provider extends CI_Model
 
     function get_project_info($id)
     {
-        $sql = "SELECT * FROM $this->table WHERE `id` = ?";
+        $sql = "SELECT * FROM $this->table WHERE id=?";
         $project_info_list = $this->db->query($sql, $id)->result_array();
-        if (count($project_info_list <= 0)) {
-            return false;
-        }
-        return $project_info_list[0];
+//        if (count($project_info_list <= 0)) {
+//            return false;
+//        }
+//        return $project_info_list[0];
+        return $project_info_list;
     }
 
 }
