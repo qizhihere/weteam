@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96050d12-4eb7-40a7-a9e7-3704b9adaaef" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/Project_data_provider.php" afterPath="$PROJECT_DIR$/application/models/Project_data_provider.php" />
     </list>
     <ignored path="weteam.iws" />
@@ -47,8 +48,8 @@
       <file leaf-file-name="Project_data_provider.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/models/Project_data_provider.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+            <state relative-caret-position="172">
+              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -319,12 +320,12 @@
       <workItem from="1459488800258" duration="22000" />
       <workItem from="1459489153758" duration="311000" />
       <workItem from="1462538982916" duration="8000" />
-      <workItem from="1462715723064" duration="902000" />
+      <workItem from="1462715723064" duration="970000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10069000" />
+    <option name="totallyTimeSpent" value="10137000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
@@ -595,8 +596,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/application/models/Project_data_provider.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+        <state relative-caret-position="172">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
           <folding />
         </state>
       </provider>

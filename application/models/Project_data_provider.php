@@ -9,13 +9,11 @@
 class Project_data_provider extends CI_Model
 {
     private $table;
-    public $ci;
 
     function __construct()
     {
         parent::__construct();
         $this->table = "project";
-        $this->ci = &get_instance();
     }
 
     function save_project_info($data)
