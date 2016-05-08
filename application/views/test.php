@@ -85,8 +85,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <a href="<?= base_url() . 'index.php/' . MEMBER_ADD_PAGE ?>">成员添加页</a><br>
         <a href="<?= base_url() . 'index.php/' . MEMBER_FIND_PAGE ?>">成员查找页</a><br>
         <a href="<?= base_url() . 'index.php/' . PROJECT_ADD_PAGE ?>">项目添加页</a><br>
-        <a href="<?= base_url() . 'index.php/' . PROJECT_SHOW_PAGE ?>">项目展示页</a><br>
-        <a href="<?= base_url() . 'index.php/' . EDIT_PAGE ?>">编辑页</a><br>
+        <a href="<?= base_url() . 'index.php/' . PROJECT_SHOW_PAGE . '?id=1' ?>">项目展示页</a><br>
+        <a href="<?= base_url() . 'index.php/' . EDIT_PAGE . '?id=1' ?>">编辑页</a><br>
     </div>
 
     <p class="footer">Page rendered in <strong>{elapsed_time}</strong>
