@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96050d12-4eb7-40a7-a9e7-3704b9adaaef" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/Page.php" afterPath="$PROJECT_DIR$/application/controllers/Page.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/Project_data_provider.php" afterPath="$PROJECT_DIR$/application/models/Project_data_provider.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/Team_data_provider.php" afterPath="$PROJECT_DIR$/application/models/Team_data_provider.php" />
     </list>
     <ignored path="weteam.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,30 +39,8 @@
       <file leaf-file-name="Page.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/controllers/Page.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="65" column="16" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Project_data_provider.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/models/Project_data_provider.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-              <folding>
-                <marker date="1462717472000" expanded="true" signature="571:618" placeholder="SELECT * FRO... ${$this-&gt;table}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="project_show.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/views/project_show.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="24" column="37" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="37" />
+            <state relative-caret-position="478">
+              <caret line="64" column="16" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -87,7 +66,6 @@
         <option value="$PROJECT_DIR$/application/views/team.php" />
         <option value="$PROJECT_DIR$/application/config/database.php" />
         <option value="$PROJECT_DIR$/application/controllers/Home.php" />
-        <option value="$PROJECT_DIR$/application/models/Team_data_provider.php" />
         <option value="$PROJECT_DIR$/application/config/routes.php" />
         <option value="$PROJECT_DIR$/application/models/User_data_provider.php" />
         <option value="$PROJECT_DIR$/application/config/web_config.php" />
@@ -101,11 +79,12 @@
         <option value="$PROJECT_DIR$/application/views/project_add.php" />
         <option value="$PROJECT_DIR$/my_models.php" />
         <option value="$PROJECT_DIR$/application/views/edit.php" />
-        <option value="$PROJECT_DIR$/application/models/Project_data_provider.php" />
         <option value="$PROJECT_DIR$/application/config/autoload.php" />
         <option value="$PROJECT_DIR$/application/views/test.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/application/views/project_show.php" />
+        <option value="$PROJECT_DIR$/application/models/Project_data_provider.php" />
+        <option value="$PROJECT_DIR$/application/models/Team_data_provider.php" />
         <option value="$PROJECT_DIR$/application/controllers/Page.php" />
       </list>
     </option>
@@ -316,12 +295,12 @@
       <workItem from="1459488800258" duration="22000" />
       <workItem from="1459489153758" duration="311000" />
       <workItem from="1462538982916" duration="8000" />
-      <workItem from="1462715723064" duration="2576000" />
+      <workItem from="1462715723064" duration="2626000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11743000" />
+    <option name="totallyTimeSpent" value="11793000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
@@ -548,16 +527,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/Team_data_provider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="65" />
-          <folding>
-            <marker date="1459474539000" expanded="true" signature="573:620" placeholder="SELECT * FRO... ${$this-&gt;table}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/models/Member_data_provider.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="558">
@@ -617,6 +586,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Team_data_provider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="31" column="55" selection-start-line="31" selection-start-column="55" selection-end-line="31" selection-end-column="55" />
+          <folding>
+            <marker date="1462718571000" expanded="true" signature="573:609" placeholder="SELECT * FRO... ${$this-&gt;table}" />
+            <marker date="1462718571000" expanded="true" signature="573:610" placeholder="SELECT * FRO... ${$this-&gt;table}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/models/Project_data_provider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="31" column="53" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
+          <folding>
+            <marker date="1462718557000" expanded="true" signature="571:608" placeholder="SELECT * FRO... ${$this-&gt;table}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/views/project_show.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
@@ -625,20 +615,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/models/Project_data_provider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-          <folding>
-            <marker date="1462717472000" expanded="true" signature="571:618" placeholder="SELECT * FRO... ${$this-&gt;table}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/application/controllers/Page.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="65" column="16" selection-start-line="65" selection-start-column="16" selection-end-line="65" selection-end-column="16" />
+        <state relative-caret-position="478">
+          <caret line="64" column="16" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="16" />
           <folding />
         </state>
       </provider>

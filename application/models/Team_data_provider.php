@@ -29,8 +29,8 @@ class Team_data_provider extends CI_Model
 
     public function get_team_info($id)
     {
-        $sql = "SELECT * FROM $this->table WHERE id=$id LIMIT 1";
-        $team_info_list = $this->db->query($sql)->result_array();
+        $sql = "SELECT * FROM $this->table WHERE id=?";
+        $team_info_list = $this->db->query($sql, $id)->result_array();
         if (count($team_info_list <= 0)) {
             return false;
         }
