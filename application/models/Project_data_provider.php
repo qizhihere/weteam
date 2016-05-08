@@ -29,10 +29,8 @@ class Project_data_provider extends CI_Model
 
     function get_project_info($id)
     {
-        $where = array(
-            "id" => $id,
-        );
-        $project_info_list = $this->db->where($where)->get($this->table)->result_array();
+        $sql = "SELECT * FROM $this->table WHERE id=$id LIMIT 1";
+        $project_info_list = $this->db->query($sql)->result_array();
         if (count($project_info_list <= 0)) {
             return false;
         }
