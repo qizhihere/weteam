@@ -43,10 +43,10 @@ class Api extends CI_Controller
         } else {
             if ($type == INDIVIDUAL) {
                 $this->data["result"] = "登陆成功";
-                $this->data["url"] = INDIVIDUAL_PAGE;
+                $this->data["url"] = INDIVIDUAL_PAGE . "?id=" . $user_info["id"];
             } else if ($type == TEAM) {
                 $this->data["result"] = "登陆成功";
-                $this->data["url"] = TEAM_PAGE;
+                $this->data["url"] = TEAM_PAGE . "?id=" . $user_info["id"];
             }
         }
         $this->parser->parse("tips_redirect_page", $this->data);
