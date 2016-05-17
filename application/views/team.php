@@ -11,9 +11,8 @@
 <body>
 <nav class="navbar navbar-default" role="navigation">
     <div class="navbar-header">
-        <p class="navbar-brand"><a href="#"><i class="iconfont">&#xe613;</i></a>&nbsp;WETeam</p>
+        <!--        <p class="navbar-brand"><a href="#"><i class="iconfont">&#xe613;</i></a>&nbsp;WETeam</p>-->
     </div>
-
 </nav>
 <div class="container div3 none">
     <div class="row">
@@ -23,9 +22,10 @@
                     <img src="<?= base_url() ?>resource/images/head.png" alt="" height="100%" width="100%">
                 </div>
                 <div class="col-xs-7 intro-words">
-                    <span class="logo">WESharp</span>
+                    <span class="logo"><?= $team_info["name"] ?></span>
                     <br><br>
-                    <span><a href=""><i class="iconfont">&#xe602;</i>编辑资料</a></span>
+                    <span><a href="<?= base_url("index.php/" . EDIT_PAGE . "?id=" . $team_info["id"]) ?>"><i
+                                class="iconfont">&#xe602;</i>编辑资料</a></span>
                 </div>
             </div>
             <div class="row team-intro">
@@ -33,7 +33,7 @@
                     简介
                 </div>
                 <div class="col-xs-8">
-                    WESharp成立于2006年，是一个以管理科学与工程为主要学科技术方向的团队。
+                    <?= $team_info["content"] ?>
                 </div>
             </div>
         </div>
@@ -42,149 +42,48 @@
 <div class="container div2 none">
     <div class="row">
         <div class="col-xs-12 col-md-offset-4 col-md-4">
-            <div class="row member">
-                <div class="col-xs-12">
-                    付煜
+            <?php foreach ($user_list as $user_info): ?>
+                <div class="row member">
+                    <div class="col-xs-12">
+                        <?= $user_info["name"] ?>
+                    </div>
                 </div>
-            </div>
-            <div class="row member">
-                <div class="col-xs-12">
-                    周润来
-                </div>
-            </div>
-            <div class="row member">
-                <div class="col-xs-12">
-                    高丹
-                </div>
-            </div>
+            <?php endforeach ?>
         </div>
     </div>
 </div>
 <div class="container div1 block">
     <div class="row">
         <div class="col-xs-12 col-md-offset-4 col-md-4">
-            <div class="row">
-                <div class="col-xs-2 col-xs-offset-1">
-                    <img src="<?= base_url() ?>resource/images/big_circular.png" alt="" width="75%">
+            <? foreach ($project_list as $project_info): ?>
+                <div class="row">
+                    <div class="col-xs-2 col-xs-offset-1">
+                        <img src="<?= base_url() ?>resource/images/big_circular.png" alt="" width="75%">
+                    </div>
+                    <div class="col-xs-9 date">
+                        <span><?= $project_info["time"] ?></span>
+                    </div>
                 </div>
-                <div class="col-xs-9 date">
-                    <span>3月11日</span>
+                <div class="row">
+                    <div class="col-xs-2 col-xs-offset-1">
+                        <img src="<?= base_url() ?>resource/images/small_circular.png" alt="" width="75%">
+                    </div>
+                    <div class="col-xs-4 project-title">
+                        <span><?= $project_info["user_name"] ?></span>
+                    </div>
+                    <div class="col-xs-5 project-title">
+                        <a href="<?= base_url("index.php/" . PROJECT_SHOW_PAGE . "?id=" . $project_info["id"]) ?>"><?= $project_info["project_name"] ?></a>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-2 col-xs-offset-1">
-                    <img src="<?= base_url() ?>resource/images/small_circular.png" alt="" width="75%">
-                </div>
-                <div class="col-xs-4 project-title">
-                    <span>WESharp</span>
-                </div>
-                <div class="col-xs-5 project-title">
-                    <span>时光慢递</span>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-2 col-xs-offset-1">
-                    <img src="<?= base_url() ?>resource/images/small_circular.png" alt="" width="75%">
-                </div>
-                <div class="col-xs-4 project-title">
-                    <span>WESharp</span>
-                </div>
-                <div class="col-xs-5 project-title">
-                    <span>时光慢递</span>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-xs-2 col-xs-offset-1">
-                    <img src="<?= base_url() ?>resource/images/big_circular.png" alt="" width="75%">
-                </div>
-                <div class="col-xs-9 date">
-                    <span>3月10日</span>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-2 col-xs-offset-1">
-                    <img src="<?= base_url() ?>resource/images/small_circular.png" alt="" width="75%">
-                </div>
-                <div class="col-xs-4 project-title">
-                    <span>WESharp</span>
-                </div>
-                <div class="col-xs-5 project-title">
-                    <span>时光慢递</span>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-2 col-xs-offset-1">
-                    <img src="<?= base_url() ?>resource/images/small_circular.png" alt="" width="75%">
-                </div>
-                <div class="col-xs-4 project-title">
-                    <span>WESharp</span>
-                </div>
-                <div class="col-xs-5 project-title">
-                    <span>时光慢递</span>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-2 col-xs-offset-1">
-                    <img src="<?= base_url() ?>resource/images/small_circular.png" alt="" width="75%">
-                </div>
-                <div class="col-xs-4 project-title">
-                    <span>WESharp</span>
-                </div>
-                <div class="col-xs-5 project-title">
-                    <span>时光慢递</span>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-2 col-xs-offset-1">
-                    <img src="<?= base_url() ?>resource/images/small_circular.png" alt="" width="75%">
-                </div>
-                <div class="col-xs-4 project-title">
-                    <span>WESharp</span>
-                </div>
-                <div class="col-xs-5 project-title">
-                    <span>时光慢递</span>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-2 col-xs-offset-1">
-                    <img src="<?= base_url() ?>resource/images/small_circular.png" alt="" width="75%">
-                </div>
-                <div class="col-xs-4 project-title">
-                    <span>WESharp</span>
-                </div>
-                <div class="col-xs-5 project-title">
-                    <span>时光慢递</span>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-2 col-xs-offset-1">
-                    <img src="<?= base_url() ?>resource/images/small_circular.png" alt="" width="75%">
-                </div>
-                <div class="col-xs-4 project-title">
-                    <span>WESharp</span>
-                </div>
-                <div class="col-xs-5 project-title">
-                    <span>时光慢递</span>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-2 col-xs-offset-1">
-                    <img src="<?= base_url() ?>resource/images/small_circular.png" alt="" width="75%">
-                </div>
-                <div class="col-xs-4 project-title">
-                    <span>WESharp</span>
-                </div>
-                <div class="col-xs-5 project-title">
-                    <span>时光慢递</span>
-                </div>
-            </div>
+            <? endforeach ?>
         </div>
     </div>
 </div>
 </div>
 <div class="add">
-    <a href=""><i class="iconfont click">&#xe720;</i></a>
+    <a class="add-href" href="<?= base_url("index.php/" . PROJECT_ADD_PAGE . "?id=" . $team_info["id"]) ?>"><i
+            class="iconfont click">
+            &#xe720;</i></a>
 </div>
 <div class="container">
     <div class="row">
@@ -223,6 +122,7 @@
         $(".div2").removeClass('block').addClass('none');
         $(".div3").removeClass('block').addClass('none');
         $(".add").removeClass('none').addClass('block');
+        $(".add-href").attr("href", "<?= base_url("index.php/" . PROJECT_ADD_PAGE . "?id=" . $team_info["id"]) ?>");
     });
     $(".btn2").click(function (event) {
         $(".btn2 .iconfont").addClass('click');
@@ -235,6 +135,7 @@
         $(".div1").removeClass('block').addClass('none');
         $(".div3").removeClass('block').addClass('none');
         $(".add").removeClass('none').addClass('block');
+        $(".add-href").attr("href", "<?= base_url("index.php/" . MEMBER_ADD_PAGE . "?id=" . $team_info["id"]) ?>");
     });
     $(".btn3").click(function (event) {
         $(".btn3 .iconfont").addClass('click');

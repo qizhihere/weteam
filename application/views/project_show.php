@@ -11,7 +11,7 @@
 <body>
 <nav class="navbar navbar-default" role="navigation">
     <div class="navbar-header">
-        <p class="navbar-brand"><a href="#"><i class="iconfont">&#xe613;</i></a>&nbsp;详细项目资料</p>
+<!--        <p class="navbar-brand"><a href=""><i class="iconfont">&#xe613;</i></a>&nbsp;详细项目资料</p>-->
     </div>
 </nav>
 <div class="container">
@@ -66,11 +66,11 @@
                     <?= $project_info['content'] ?>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-xs-5 col-xs-offset-7 register">
-                    <button type="submit" class="btn btn-register">加入项目</button>
-                </div>
-            </div>
+<!--            <div class="row">-->
+<!--                <div class="col-xs-5 col-xs-offset-7 register">-->
+<!--                    <button type="submit" class="btn btn-register">加入项目</button>-->
+<!--                </div>-->
+<!--            </div>-->
         </div>
     </div>
 </div>

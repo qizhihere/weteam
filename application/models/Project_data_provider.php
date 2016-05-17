@@ -27,13 +27,23 @@ class Project_data_provider extends CI_Model
         return true;
     }
 
+    function get_project_list()
+    {
+        $sql = "SELECT * FROM $this->table";
+        $project_info_list = $this->db->query($sql)->result_array();
+        if (count($project_info_list) <= 0) {
+            return false;
+        }
+        return $project_info_list;
+    }
+
     function get_project_info($id)
     {
         $sql = "SELECT * FROM $this->table WHERE id=?";
         $project_info_list = $this->db->query($sql, $id)->result_array();
-//        if (count($project_info_list <= 0)) {
-//            return false;
-//        }
+        if (count($project_info_list) <= 0) {
+            return false;
+        }
         return $project_info_list[0];
     }
 

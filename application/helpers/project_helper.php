@@ -56,13 +56,14 @@ function create_team_member_info($individual_id, $team_id)
     );
 }
 
-function create_project_info($project_name, $user_name, $user_phone, $time, $content)
+function create_project_info($team_id, $project_name, $user_name, $user_phone, $time, $content)
 {
     return array(
+        'team_id' => (int)$team_id,
         'project_name' => $project_name,
         'user_name' => $user_name,
         'user_phone' => $user_phone,
-        'time' => $time,
+        'time' => (int)$time,
         'content' => $content,
     );
 }

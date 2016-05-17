@@ -27,6 +27,7 @@ define("MEMBER_FIND_PAGE", "page/member_find_page/");
 define("PROJECT_ADD_PAGE", "page/project_add_page/");
 define("PROJECT_SHOW_PAGE", "page/project_show_page/");
 define("EDIT_PAGE", "page/edit_page/");
+define("TIPS_REDIRECT_PAGE", "page/tips_redirect_page/");
 
 // 操作
 define("REGISTER_API", "api/register_api/");

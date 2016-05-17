@@ -12,11 +12,13 @@
 <div class="container">
     <div class="row">
         <div class="col-xs-2">
-            <button class="btn btn-return" type="submit"><i class="iconfont">&#xe613;</i></button>
+            <a class="btn btn-return" href="<?= base_url("index.php/" . TEAM_PAGE . "?id=" . $id) ?>"><i
+                    class="iconfont">&#xe613;</i></a>
         </div>
         <div class="col-xs-10">
-            <form role="search">
-                <input type="text" class="form-search" placeholder="请输入成员邮箱">
+            <form role="search" method="post" action="<?= base_url("index.php/" . MEMBER_SEARCH_API) ?>">
+                <input type="hidden" class="form-search" name="id" value="<?= $id ?>">
+                <input type="text" class="form-search" placeholder="请输入成员邮箱" name="mail">
                 <button class="btn-search" type="submit"><i class="iconfont">&#xe761;</i></button>
             </form>
         </div>

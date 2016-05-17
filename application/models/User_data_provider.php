@@ -29,9 +29,19 @@ class User_data_provider extends CI_Model
 
     public function get_user_info($type, $mail, $password)
     {
-        $sql = "SELECT * FROM $this->table WHERE type=$type AND mail=$mail AND password=$password LIMIT 1";
+        $sql = "SELECT * FROM $this->table WHERE type=$type AND mail='$mail' AND password='$password' LIMIT 1";
         $user_info_list = $this->db->query($sql)->result_array();
-        if (count($user_info_list <= 0)) {
+        if (count($user_info_list) <= 0) {
+            return false;
+        }
+        return $user_info_list[0];
+    }
+
+    public function get_user_info_by_id($id)
+    {
+        $sql = "SELECT * FROM $this->table WHERE id=$id LIMIT 1";
+        $user_info_list = $this->db->query($sql)->result_array();
+        if (count($user_info_list) <= 0) {
             return false;
         }
         return $user_info_list[0];
@@ -39,9 +49,9 @@ class User_data_provider extends CI_Model
 
     public function search_user_info($mail)
     {
-        $sql = "SELECT * FROM $this->table WHERE mail=$mail";
+        $sql = "SELECT * FROM $this->table WHERE mail='$mail'";
         $user_info_list = $this->db->query($sql)->result_array();
-        if (count($user_info_list <= 0)) {
+        if (count($user_info_list) <= 0) {
             return false;
         }
         return $user_info_list;

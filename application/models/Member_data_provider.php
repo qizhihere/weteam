@@ -38,5 +38,11 @@ class Member_data_provider extends CI_Model
         return true;
     }
 
+    public function get_team_member_list($team_id)
+    {
+        $sql = "SELECT * FROM $this->team_table WHERE team_id=$team_id";
+        $team_member_list = $this->db->query($sql)->result_array();
+        return $team_member_list;
+    }
 
 }

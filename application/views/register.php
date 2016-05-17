@@ -11,7 +11,8 @@
 <body>
 <nav class="navbar navbar-default" role="navigation">
     <div class="navbar-header">
-        <p class="navbar-brand"><a href="#"><i class="iconfont">&#xe613;</i></a>&nbsp;&nbsp;注&nbsp;册</p>
+        <p class="navbar-brand"><a href="<?= base_url("index.php/" . LOGIN_PAGE) ?>"><i class="iconfont">&#xe613;</i></a>&nbsp;&nbsp;登&nbsp;录
+        </p>
     </div>
 </nav>
 <div class="container">
@@ -39,7 +40,7 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-12">
-                        <input type="password" class="form-control form-register" name="name" placeholder="团队名称"
+                        <input type="text" class="form-control form-register" name="name" placeholder="团队名称"
                                required="true">
                     </div>
                 </div>
@@ -80,7 +81,7 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-12">
-                        <input type="password" class="form-control form-register" id="password-team" name="name"
+                        <input type="text" class="form-control form-register" id="password-team" name="name"
                                placeholder="&nbsp;姓&nbsp;名" required="true">
                     </div>
                 </div>

@@ -12,13 +12,15 @@
 <body>
 <nav class="navbar navbar-default" role="navigation">
     <div class="navbar-header">
-        <p class="navbar-brand"><a href="#"><i class="iconfont">&#xe613;</i></a>&nbsp;创建项目</p>
+        <p class="navbar-brand"><a href="<?= base_url("index.php/" . TEAM_PAGE . "?id=" . $id) ?>"><i class="iconfont">
+                    &#xe613;</i></a>&nbsp;创建项目</p>
     </div>
 </nav>
 <div class="container">
     <div class="row">
         <div class="col-xs-offset-1 col-xs-10 col-md-offset-4 col-md-4">
             <form action="<?= base_url() . 'index.php/' . PROJECT_SAVE_API ?>" method="POST" role="form" id="form-team">
+                <input type="hidden" class="form-control form-register iconfont" name="team_id" value="<?= $id ?>">
                 <div class="row">
                     <div class="col-xs-12">
                         <input type="text" class="form-control form-register iconfont" name="project_name"

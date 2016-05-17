@@ -17,7 +17,7 @@
 <div class="container">
     <div class="row">
         <div class="col-xs-12 col-md-offset-4 col-md-4">
-            <form action="<?= base_url(EDIT_API) ?>" method="POST">
+            <form action="<?= base_url("index.php/" . EDIT_API) ?>" method="POST">
                 <div class="col-xs-12 line">
                     <input type="hidden" class="form-control" name="id" value="<?= $team_info['id'] ?>">
                 </div>

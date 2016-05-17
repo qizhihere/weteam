@@ -12,7 +12,7 @@
 
 <nav class="navbar navbar-default" role="navigation">
     <div class="navbar-header">
-        <p class="navbar-brand"><a href="#"><i class="iconfont">&#xe613;</i></a>&nbsp;WETeam</p>
+<!--        <p class="navbar-brand"><a href="#"><i class="iconfont">&#xe613;</i></a>&nbsp;WETeam</p>-->
     </div>
 
 </nav>
@@ -25,7 +25,7 @@
                     <img src="<?= base_url() ?>resource/images/head.png" alt="" height="100%" width="100%">
                 </div>
                 <div class="col-xs-8 intro-words">
-                    <span>沈浙，已加入团队</span>
+                    <span><?= $user_info["name"] ?>，已加入团队</span>
                     <br>
                     <span>WESharp</span>
                 </div>
